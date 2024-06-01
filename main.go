@@ -7,7 +7,7 @@ import (
 )
 
 var AllTeam map[string][]string = map[string][]string{
-	"Team A": {"Alice A", "Bob A", "Charlie A", "David A", "Eve A", "Frank A"},
+	"Team A": {"Alice A", "Bob A", "Charlie A", "David A", "Eve A"},
 	"Team B": {"David B", "Eve B", "Frank B", "Grace B", "Hannah B"},
 	"Team C": {"Grace C", "Hannah C", "Ivan C", "Jenny C"},
 }
@@ -84,7 +84,6 @@ func main() {
 				tempMember = append(tempMember[:randIndex], tempMember[randIndex+1:]...)
 			}
 		}
-		// add member to new team
 	}
 
 	for key, value := range NewTeam {
