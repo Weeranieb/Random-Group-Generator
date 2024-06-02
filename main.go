@@ -63,10 +63,10 @@ func main() {
 		tempMember := member
 		fraction := len(member) % len(AllTeam) // หารเอาเศษ
 		quotient := len(member) / len(AllTeam) // ผลหาร
-		sliceFraction := make([]int, 0, fraction)
-		for i := 0; i < fraction; i++ {
-			sliceFraction = append(sliceFraction, 1)
-		}
+		// sliceFraction := make([]int, 0, fraction)
+		// for i := 0; i < fraction; i++ {
+		// 	sliceFraction = append(sliceFraction, 1)
+		// }
 
 		quotaPerTeam := map[string]int{}
 		// make everyone equal as possible
@@ -87,9 +87,10 @@ func main() {
 			quotaPerTeam[teamName] += quotient
 			// random fraction ว่าจะเอาไปใส่ทีมไหน
 			if fraction > 0 {
-				randIndex := rand.Intn(len(sliceFraction))
-				quotaPerTeam[teamName] += sliceFraction[randIndex]
-				sliceFraction = append(sliceFraction[:randIndex], sliceFraction[randIndex+1:]...)
+				// randIndex := rand.Intn(len(sliceFraction))
+				// quotaPerTeam[teamName] += sliceFraction[randIndex]
+				// sliceFraction = append(sliceFraction[:randIndex], sliceFraction[randIndex+1:]...)
+				quotaPerTeam[teamName] += 1
 				fraction--
 			}
 		}
