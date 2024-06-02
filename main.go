@@ -110,7 +110,7 @@ func main() {
 	}
 
 	for key, value := range NewTeam {
-		fmt.Printf("----->%s \n", key)
+		fmt.Printf("-----> %s: %d คน\n", key, len(value))
 		for _, member := range value {
 			fmt.Println(member)
 		}
