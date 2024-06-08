@@ -48,21 +48,29 @@ This Go project redistributes members from a set of original teams into a new se
 
 ## Example Output
 
-The program prints the distribution of members in each new team:
------> Team Alpha: 5 person(s)
+-----> Team Bravo: 6 person(s)
+Name4 A
 Name1 A
-Name3 B
-Name4 C
-...
------> Team Bravo: 5 person(s)
-Name2 A
+Name2 B
 Name5 B
-Name6 C
-...
------> Team Charlie: 5 person(s)
+Name3 C
+Name1 C
+
+-----> Team Charlie: 6 person(s)
+Name2 A
 Name3 A
+Name3 B
+Name4 B
+Name4 C
+Name5 C
+
+-----> Team Alpha: 6 person(s)
+Name5 A
+Name6 A
 Name1 B
 Name2 C
+Name7 C
+Name6 C
 
 ## Future Enhancements
 
