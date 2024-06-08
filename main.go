@@ -7,32 +7,30 @@ import (
 )
 
 var AllTeam map[string][]string = map[string][]string{
-	"Team A": {"จั๊ม A",
-		// "บิว A",
-		"เบ้น A",
-		"บุ๋ม A",
-		"ต้น A",
-		"ฟิสท์ A",
-		"กีต้า A",
-		"อุ้ม A"},
-	"Team B": {"เก๋ง B",
-		// "แอน B",
-		"เหมา B",
-		"แฟร์ B",
-		"กัส B",
-		"กร B",
-		"อ้น B",
-		"ปอ B",
-		"มด B"},
-	"Team C": {"เนี๊ยบ C",
-		"บาส C",
-		"แสน C",
-		"ภูริ C",
-		"ป่าน C",
-		"เก่ง C",
-		// "อาท C",
-		"โก้ C",
-		"ฝน C"},
+	"Team A": {
+		"Name1 A",
+		"Name2 A",
+		"Name3 A",
+		"Name4 A",
+		"Name5 A",
+		"Name6 A",
+	},
+	"Team B": {
+		"Name1 B",
+		"Name2 B",
+		"Name3 B",
+		"Name4 B",
+		"Name5 B",
+	},
+	"Team C": {
+		"Name1 C",
+		"Name2 C",
+		"Name3 C",
+		"Name4 C",
+		"Name5 C",
+		"Name6 C",
+		"Name7 C",
+	},
 }
 
 var NewTeam map[string][]string = map[string][]string{
@@ -110,7 +108,7 @@ func main() {
 	}
 
 	for key, value := range NewTeam {
-		fmt.Printf("-----> %s: %d คน\n", key, len(value))
+		fmt.Printf("-----> %s: %d person(s)\n", key, len(value))
 		for _, member := range value {
 			fmt.Println(member)
 		}
